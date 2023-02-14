@@ -43,7 +43,7 @@ git clone https://github.com/noislabs/full-node.git
 cd full-node/full-node/
 git checkout nois-testnet-003
 ./build.sh
-mv out/noisd /usr/local/bin
+mv out/noisd root/go/bin/humansd
 ```
 
 
