@@ -23,7 +23,7 @@ https://github.com/L0vd/Nois/tree/main/StateSync
 https://github.com/L0vd/Nois/tree/main/Nois_wallet_bot
 
 ## :heart: Public RPC endpoint
-http://95.216.2.219:28657/
+https://nois-testnet.rpc.l0vd.com
 
 ## :heart: Public API
-http://95.216.2.219:28317/
+https://nois-testnet.api.l0vd.com
