@@ -1,15 +1,15 @@
 # Nois State Sync
 
 ## Info
-#### Public RPC endpoint: http://95.216.2.219:28657/
-#### Public API: http://95.216.2.219:28317/
+#### Public RPC endpoint: https://nois-testnet.rpc.l0vd.com
+#### Public API: https://nois-testnet.api.l0vd.com
 
 ## Guide to sync your node using State Sync:
 
 ### Copy the entire command
 ```
 sudo systemctl stop noisd
-SNAP_RPC="http://95.216.2.219:28657"; \
+SNAP_RPC="https://nois-testnet.rpc.l0vd.com"; \
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash); \
