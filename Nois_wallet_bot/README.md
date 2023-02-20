@@ -13,7 +13,7 @@ The bot does several useful things.
 To get started, add your wallet address. After that, you will be able to see the number of tokens in different states. In addition, the bot will automatically add validators that you delegated your tokens earlier to the Watchlist.
 
 **Here is the full list of available commands:**  
-/start - start working with bot (select Humans from network list)  
+/start - start working with bot (select Nois from network list)  
 /menu - call menu buttons  
 /help - list of commands  
 
