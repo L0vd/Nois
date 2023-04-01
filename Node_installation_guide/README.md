@@ -25,7 +25,7 @@ sudo apt update && sudo apt upgrade -y
 ## Install GO
 ```
 if ! [ -x "$(command -v go)" ]; then
-  ver="1.18.3"
+  ver="1.19.3"
   cd $HOME
   wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
   sudo rm -rf /usr/local/go
@@ -39,11 +39,10 @@ fi
 ## Install node
 ```
 cd $HOME
-git clone https://github.com/noislabs/full-node.git
-cd full-node/full-node/
-git checkout nois-testnet-003
-./build.sh
-mv out/noisd root/go/bin/humansd
+git clone https://github.com/noislabs/noisd
+cd noisd
+git checkout v1.0.1
+make install
 ```
 
 
@@ -55,7 +54,7 @@ You should replace values in <> <br />
 ```
 echo "export NOIS_WALLET="<YOUR_WALLET_NAME>"" >> $HOME/.bash_profile
 echo "export NOIS_NODENAME="<YOUR_MONIKER>"" >> $HOME/.bash_profile
-echo "export NOIS_CHAIN_ID="nois-testnet-003"" >> $HOME/.bash_profile
+echo "export NOIS_CHAIN_ID="nois-testnet-005"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
