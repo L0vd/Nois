@@ -11,7 +11,7 @@
 https://github.com/L0vd/Nois/tree/main/Node_installation_guide
 
 ## :heart: Explorer
-http://explorers.l0vd.com/nois-testnet-003
+https://explorers.l0vd.com/nois-testnet
 
 ## :heart: Monitoring
 https://github.com/L0vd/Nois/tree/main/Monitoring
