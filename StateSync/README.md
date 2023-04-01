@@ -20,7 +20,7 @@ s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.noisd/config/config.toml
 
-peers="3aa7f66499a700625056b674bf26d4f457dc38da@95.216.2.219:28656" \
+peers="cecbb8a5dd8bff1ce519cba9c3494919cd14f3dc@65.109.70.45:14656" \
 && sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.noisd/config/config.toml 
 
 noisd tendermint unsafe-reset-all --home ~/.noisd --keep-addr-book && sudo systemctl restart noisd && \
